@@ -2,7 +2,7 @@ import requests
 from twilio.rest import Client
 import os
 
-OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
+OWM_Endpoint = "PUT OWM ENDPOINT HERE"
 api_key = os.environ.get("OWM_API_KEY")
 account_sid = "ACf0e4e2e9d8f7f7f7f7f7f7f7f7f7f7f7"
 auth_token = os.environ.get("AUTH_TOKEN")
@@ -34,25 +34,4 @@ if will_rain:
         )
 
     print(message.status)
-# import requests
-
-# api_key = "a09c90a405e0cf8aa6237c5840416332"
-# lat = -6.792354
-# lon = 39.208328
-
-# response = requests.get(
-#     url=f"http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={api_key}"
-# )
-# response.raise_for_status()
-
-
-# data = response.json()
-
-# for forecast in data['list']:
-#     date_time = forecast['dt_txt']
-#     weather = forecast['weather'][0]
-#     weather_id = weather['id']
-#     weather_description = weather['description']
-
-#     print(
-#         f"At {date_time}, Weather ID: {weather_id}, Description: {weather_description}")
+#
