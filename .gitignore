@@ -1,0 +1,6 @@
+__pycache__
+data.txt
+.vscode
+node_modules
+.DS_Store
+snake_game/day24/my_file.txt
